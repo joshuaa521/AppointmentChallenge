@@ -6,6 +6,7 @@ public class AppointmentBook {
     private boolean isMinuteFree(int period, int minute) {
         return schedule [period - 1][minute];
     }
+
     public int findFreeBlock(int period, int duration) {
         int block = 0;
         for (int i = 0; i < 60; i++) {
